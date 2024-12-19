@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Whack-a-mole</title>
 </head>
 <body>
-    
+    <div class="game-container">
+        <p id="game">Whack-A-Mole</p>
+
+        <div class="flex-container">
+            <div class="circle" id="block1"></div>
+            <div class="circle" id="block2"></div>
+            <div class="circle" id="block3"></div>
+        </div>
+        <div class="flex-container">
+            <div class="circle" id="block4"></div>
+            <div class="circle" id="block5"></div>
+            <div class="circle" id="block6"></div>
+        </div>
+        <div class="flex-container">
+            <div class="circle" id="block7"></div>
+            <div class="circle" id="block8"></div>
+            <div class="circle" id="block9"></div>
+        </div>
+    </div>
+
+    <div>
+        <button id="btn" onclick="startGame()">Start Game</button>
+        <div id="score-card">Score: <span id="score"></span></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
